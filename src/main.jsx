@@ -10,13 +10,16 @@ import AddProduct from './Components/AddProduct.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-  <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
+  {/* <Routes>
+     
+      
+    </Routes> */}
     <Routes>
+    <Route path="/" element={<Home />} />
+   
     <Route path="dashboard" element={<DashboardLayouts />}>
   <Route path="allusers" element={<AllUsers />} />
-  <Route path="allusers/:id" element={<UserProfile />} />
+  <Route path="user/:id" element={<UserProfile />} />
   <Route path="allproducts" element={<AllProducts />} />
   <Route path="addproduct" element={<AddProduct />} />
 

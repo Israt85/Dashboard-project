@@ -14,7 +14,7 @@ const Table1 =()=>{
     return(
         <div>
 <div className="overflow-x-auto">
-  <table className="table">
+  <table className="table bg-gray-50 rounded-lg mx-auto">
     {/* head */}
     <thead>
       <tr>
@@ -32,7 +32,7 @@ const Table1 =()=>{
         <td>{user?.name}</td>
         <td>{user?.email}</td>
         <td>{user?.address?.city}</td>
-        <Link to={`/dashboard/allusers/${user.id}`}>View Profile</Link>
+        <Link to={`/dashboard/user/${user.id}`}>View Profile</Link>
 
       </tr>
         )
